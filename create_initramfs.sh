@@ -27,7 +27,7 @@ WGET="wget -q"
 #URLs of scripts and files
 rcS_url="https://raw.githubusercontent.com/buildroot/buildroot/master/package/initscripts/init.d/rcS"
 rcK_url="https://raw.githubusercontent.com/buildroot/buildroot/master/package/initscripts/init.d/rcK"
-network_url="https://raw.githubusercontent.com/buildroot/buildroot/master/package/initscripts/init.d/S40network"
+network_url="https://raw.githubusercontent.com/buildroot/buildroot/master/package/ifupdown-scripts/S40network"
 urandom_url="https://raw.githubusercontent.com/buildroot/buildroot/master/package/initscripts/init.d/S20urandom"
 passwd_url="https://raw.githubusercontent.com/buildroot/buildroot/master/system/skeleton/etc/passwd"
 shadow_url="https://raw.githubusercontent.com/buildroot/buildroot/master/system/skeleton/etc/shadow"
