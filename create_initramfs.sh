@@ -32,7 +32,7 @@ urandom_url="https://raw.githubusercontent.com/buildroot/buildroot/master/packag
 passwd_url="https://raw.githubusercontent.com/buildroot/buildroot/master/system/skeleton/etc/passwd"
 shadow_url="https://raw.githubusercontent.com/buildroot/buildroot/master/system/skeleton/etc/shadow"
 group_url="https://raw.githubusercontent.com/buildroot/buildroot/master/system/skeleton/etc/group"
-fstab_url="https://raw.githubusercontent.com/buildroot/buildroot/master/system/skeleton/etc/fstab"
+fstab_url="https://raw.githubusercontent.com/buildroot/buildroot/76fc9275f14ec295b0125910464969bfa7441b85/package/skeleton-sysv/skeleton/etc/fstab"
 inittab_url="https://raw.githubusercontent.com/buildroot/buildroot/master/package/busybox/inittab"
 
 # Get the distro we're running on
