@@ -32,7 +32,7 @@ urandom_url="https://raw.githubusercontent.com/buildroot/buildroot/master/packag
 passwd_url="https://raw.githubusercontent.com/buildroot/buildroot/master/system/skeleton/etc/passwd"
 shadow_url="https://raw.githubusercontent.com/buildroot/buildroot/master/system/skeleton/etc/shadow"
 group_url="https://raw.githubusercontent.com/buildroot/buildroot/master/system/skeleton/etc/group"
-fstab_url="https://raw.githubusercontent.com/buildroot/buildroot/master/system/skeleton/etc/fstab"
+fstab_url="https://raw.githubusercontent.com/csmart/buildroot/master/system/skeleton/etc/fstab"
 inittab_url="https://raw.githubusercontent.com/buildroot/buildroot/master/package/busybox/inittab"
 
 # Get the distro we're running on
@@ -136,20 +136,20 @@ done
 
 # Get a busybox RPM from Fedora
 if [[ "${ARCH}" == "ppc64" ]] ; then
-	pkg=busybox-1.22.1-4.fc23.ppc64.rpm
-	pkgurl=${pkgurl:-https://dl.fedoraproject.org/pub/fedora-secondary/releases/23/Everything/ppc64/os/Packages/b/}${pkg}
+	pkg=busybox-1.26.2-3.fc27.ppc64.rpm
+	pkgurl=${pkgurl:-https://dl.fedoraproject.org/pub/fedora-secondary/releases/28/Everything/ppc64/os/Packages/b/}${pkg}
 elif [[ "${ARCH}" == "ppc64le" ]] ; then
-	pkg=busybox-1.22.1-4.fc23.ppc64le.rpm
-	pkgurl=https://dl.fedoraproject.org/pub/fedora-secondary/releases/23/Everything/ppc64le/os/Packages/b/$pkg
+	pkg=busybox-1.28.3-2.fc29.ppc64le.rpm
+	pkgurl=https://dl.fedoraproject.org/pub/fedora-secondary/releases/29/Everything/ppc64le/os/Packages/b/$pkg
 elif [[ "${ARCH}" == "i386" ]] ; then
-	pkg=busybox-1.22.1-4.fc23.i686.rpm
-	pkgurl=https://dl.fedoraproject.org/pub/fedora/linux/releases/23/Everything/i386/os/Packages/b/${pkg}
+	pkg=busybox-1.28.3-2.fc29.i686.rpm
+	pkgurl=https://dl.fedoraproject.org/pub/fedora-secondary/releases/29/Everything/i386/os/Packages/b/$pkg
 elif [[ "${ARCH}" == "x86_64" ]] ; then
-	pkg=busybox-1.22.1-4.fc23.x86_64.rpm
-	pkgurl=https://dl.fedoraproject.org/pub/fedora/linux/releases/23/Everything/x86_64/os/Packages/b/${pkg}
+	pkg=busybox-1.28.3-2.fc29.x86_64.rpm
+	pkgurl=https://dl.fedoraproject.org/pub/fedora/linux/releases/29/Everything/x86_64/os/Packages/b/${pkg}
 elif [[ "${ARCH}" == "arm" ]] ; then
-	pkg=busybox-1.22.1-4.fc23.armv7hl.rpm
-	pkgurl=https://dl.fedoraproject.org/pub/fedora/linux/releases/23/Everything/armhfp/os/Packages/b/${pkg}
+	pkg=busybox-1.28.3-2.fc29.armv7hl.rpm
+	pkgurl=https://dl.fedoraproject.org/pub/fedora/linux/releases/29/Everything/armhfp/os/Packages/b/${pkg}
 else
 	usage
 fi
