@@ -168,7 +168,7 @@ cp "${CACHE_DIR}/${pkg}" .
 
 # Extract rpm to get busybox binary
 if [[ "${ID}" == "arch" ]]; then
-	rpm2cpio ${pkg} |xv -d |cpio -idm 2>/dev/null
+	rpm2cpio ${pkg} |xz -d |cpio -idm 2>/dev/null
 else
 	rpm2cpio ${pkg} |cpio -idm 2>/dev/null
 fi
